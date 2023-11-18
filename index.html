@@ -25,8 +25,36 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
+        <div class="center"><button id="show-login">LOGIN</button></div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
+
+<!----------login popup ----------->
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log In</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button>Sign In</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
     <div class="text-box">
         <h1>World's Biggest University</h1>
         <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>
@@ -180,9 +208,9 @@
     <p>Made with <i class="fa fa-heart"></i>  by Sandun Madhushan </p>
 </section>
 
-<!--JavaScript for Toggle Menu-->
-<script>
 
+<script>
+    <!--JavaScript for Toggle Menu-->
     let navLinks = document.getElementById("navLinks");
 
     function showMenu() {
@@ -192,6 +220,14 @@
     function hideMenu() {
         navLinks.style.right = "-200px"
     }
+
+//     js for login popup
+    document.querySelector("#show-login").addEventListener("click",function (){
+        document.querySelector(".popup").classList.add("active");
+    });
+    document.querySelector(".popup .close-btn").addEventListener("click",function (){
+        document.querySelector(".popup").classList.remove("active");
+    });
 
 </script>
 </body>
