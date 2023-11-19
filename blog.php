@@ -14,15 +14,15 @@
 <body>
 <section class="subheader">
     <nav>
-        <a href="index.html"> <img src="images/logo.png"></a>
+        <a href="index.php"> <img src="images/logo.png"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="course.html">COURSE</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about.php">ABOUT</a></li>
+                <li><a href="course.php">COURSE</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>

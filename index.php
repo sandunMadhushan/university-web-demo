@@ -19,10 +19,10 @@
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="course.html">COURSE</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.php">ABOUT</a></li>
+                <li><a href="course.php">COURSE</a></li>
+                <li><a href="blog.php">BLOG</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
             </ul>
         </div>
         <div class="center"><button id="show-login">LOGIN</button></div>
@@ -191,7 +191,7 @@
 <!--Call To Action-->
 <section class="cta">
     <h1>Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
-    <a href="contact.html" class="hero-btn">CONTACT US</a>
+    <a href="contact.php" class="hero-btn">CONTACT US</a>
 </section>
 
 <!--Footer-->
@@ -230,5 +230,6 @@
     });
 
 </script>
+<script src="script.js"></script>
 </body>
 </html>
