@@ -1,13 +1,13 @@
 <nav>
-    <a href="../index.php"> <img src="../images/logo.png"></a>
+    <a href="index.php"> <img src="images/logo.png"></a>
     <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
-            <li><a href="../index.php">HOME</a></li>
-            <li><a href="../about.php">ABOUT</a></li>
-            <li><a href="../course.php">COURSE</a></li>
-            <li><a href="../blog.php">BLOG</a></li>
-            <li><a href="../contact.php">CONTACT</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="about.php">ABOUT</a></li>
+            <li><a href="course.php">COURSE</a></li>
+            <li><a href="blog.php">BLOG</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
         </ul>
     </div>
     <div class="center"><button id="show-login">LOGIN</button></div>
