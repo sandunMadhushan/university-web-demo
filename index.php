@@ -1,60 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Web Demo</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php include('./partials/header.php') ?>
 </head>
 <body>
 <section class="header">
-    <nav>
-        <a href="index.html"> <img src="images/logo.png"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="course.html">COURSE</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="center"><button id="show-login">LOGIN</button></div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-
-<!----------login popup ----------->
-    <div class="popup">
-        <div class="close-btn">&times;</div>
-        <div class="form">
-            <h2>Log In</h2>
-            <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter Email">
-            </div>
-            <div class="form-element">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter Password">
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
-            </div>
-            <div class="form-element">
-                <button>Sign In</button>
-            </div>
-            <div class="form-element">
-                <a href="#">Forgot Password?</a>
-            </div>
-        </div>
-    </div>
-
+    <?php include('./partials/navbar.php') ?>
     <div class="text-box">
         <h1>World's Biggest University</h1>
         <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>
@@ -191,44 +143,10 @@
 <!--Call To Action-->
 <section class="cta">
     <h1>Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
-    <a href="contact.html" class="hero-btn">CONTACT US</a>
+    <a href="contact.php" class="hero-btn">CONTACT US</a>
 </section>
 
-<!--Footer-->
-<section class="footer">
-    <h4>About Us</h4>
-    <p>Lorem ipsum dolr sit amet, contester adipisting edlit.Lorem ipsum dolr sit amet, contester adipisting edlit.Lorem
-        ipsum dolr sit amet, <br>contester adipisting edlit. Lorem ipsum dolr sit amet, contester adipisting edlit</p>
-    <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
-    <p>Made with <i class="fa fa-heart"></i>  by Sandun Madhushan </p>
-</section>
+<?php include('partials/footer.php') ?>
 
-
-<script>
-    <!--JavaScript for Toggle Menu-->
-    let navLinks = document.getElementById("navLinks");
-
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu() {
-        navLinks.style.right = "-200px"
-    }
-
-//     js for login popup
-    document.querySelector("#show-login").addEventListener("click",function (){
-        document.querySelector(".popup").classList.add("active");
-    });
-    document.querySelector(".popup .close-btn").addEventListener("click",function (){
-        document.querySelector(".popup").classList.remove("active");
-    });
-
-</script>
 </body>
 </html>
