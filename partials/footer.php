@@ -32,4 +32,15 @@
         document.querySelector(".popup").classList.remove("active");
     });
 
+
+    //     js for register popup
+    document.querySelector("#show-register").addEventListener("click",function (){
+        document.querySelector(".popup-reg").classList.add("active");
+    });
+    document.querySelector(".popup-reg .close-btn").addEventListener("click",function (){
+        document.querySelector(".popup-reg").classList.remove("active");
+    });
+
+
+
 </script>
