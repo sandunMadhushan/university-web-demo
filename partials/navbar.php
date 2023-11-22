@@ -11,7 +11,6 @@
         </ul>
     </div>
     <div class="center"><button id="show-login">LOGIN</button></div>
-    <div class="center-reg"><button id="show-register">REGISTER</button></div>
     <i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
 
@@ -40,7 +39,7 @@
             <a href="#">Forgot Password?</a>
         </div>
             <div class="register-acc">
-                <a href="#"> Don't have an account? </a>
+                <a href="#" id="reg"> Don't have an account? </a>
             </div>
         </form>
     </div>
@@ -72,7 +71,7 @@
                 <button>Sign Up</button>
             </div>
             <div class="register-acc">
-                <a href="#"> Already have an account? </a>
+                <a href="#" id="to-login"> Already have an account? </a>
             </div>
         </form>
     </div>
